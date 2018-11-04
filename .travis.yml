@@ -1,12 +1,7 @@
+#select python language
 language: python
+#select python version
 python:
-  - "2.7"
-install:
-  - pip install python-coveralls
-  - pip install coverage
-  - pip install nose
-script:
-  - python setup.py install
-  - nosetests --with-coverage # Add me to run nose with coverage support.
-after_success:
-  - coveralls
+  - "3.5"
+#run makefile
+script: make

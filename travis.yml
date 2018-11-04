@@ -1,0 +1,7 @@
+#select python language
+language: python
+#select python version
+python:
+  - "3.5"
+#run makefile
+script: make

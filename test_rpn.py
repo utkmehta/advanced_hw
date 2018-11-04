@@ -20,3 +20,7 @@ class TestBasics(unittest.TestCase):
     def test_toomany(self):
     	with self.assertRaises(ValueError):
     		result = rpn.calculate('1 2 3 +')
+
+    def test_exponent(self):
+        result = rpn.calculate('3 3 ^')
+        self.assertEqual(27, result)

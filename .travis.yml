@@ -6,7 +6,6 @@ python:
 #run makefile
 install:
   pip install coverage
-  pip install colored
 script: 
   - coverage run test_rpn.py
   - coverage report

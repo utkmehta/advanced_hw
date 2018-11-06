@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from colored import fg, bg, attr
+# from colored import fg, bg, attr
 
 def calculate(arg):
 	stack = []
@@ -23,12 +23,12 @@ def calculate(arg):
 				result = val1**val2
 			elif token == '%':
 				result = val1 % val2;
-			print(val1, end = " ")
-			color = bg('indian_red_1a') + fg('white')
-			reset = attr('reset')
-			print(color + token + reset, end = " ")
-			print(val2, end = " ")
-			print("= ", end = " ")
+			# print(val1, end = " ")
+			# color = bg('indian_red_1a') + fg('white')
+			# reset = attr('reset')
+			# print(color + token + reset, end = " ")
+			# print(val2, end = " ")
+			# print("= ", end = " ")
 
 			stack.append(result)
 
@@ -41,12 +41,13 @@ def main():
 	while True:
 		try:
 			result = calculate(input('rpn calc> '))
-			if result < 0 : 
-				color = bg('indian_red_1a') + fg('white')
-				reset = attr('reset')
-				print(color + str(result) + reset)
-			else:
-				print(result)
+			# if result < 0 : 
+			# 	color = bg('indian_red_1a') + fg('white')
+			# 	reset = attr('reset')
+			# 	print(color + str(result) + reset)
+			# else:
+			# 	print(result)
+			print(result)
 		except ValueError:
 			pass
 
